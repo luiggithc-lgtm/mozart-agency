@@ -9,8 +9,8 @@ Rama independiente del código de la web.
 - `correo-movitecnica.md`: texto del correo con el asunto.
 
 ## Pendientes de Luiggi (marcados en dorado con "LUIGGI" en el PDF)
-- Montos de los tres paquetes, moneda, IGV, viáticos y descuento integral.
-- SCTR vigente del equipo de rodaje y piloto de dron acreditado.
+- Montos de los tres paquetes (espacios en blanco en la lámina de inversión), IGV y viáticos.
+- Contratar SCTR para el equipo de rodaje y conseguir piloto de dron con registro y seguro.
 - Texto exacto de premios y agencias (Credenciales 2026).
 - Imágenes de los casos CLBS y Electrodata y validación de sus descripciones.
 - Plazos por fase y datos de contacto.
