@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Propuesta Mozart para Movitécnica</title>
+<style>
+  :root{--black:#0b0b0b;--ink:#141414;--white:#fff;--paper:#f4f3ef;--gold:#e9b824;--grey:#8a8a8a;--grey-2:#5c5c5c;--line:#2a2a2a;--line-l:#dcdad3}
+  @page{size:1920px 1080px;margin:0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Inter,sans-serif;background:#000;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .s{width:1920px;height:1080px;position:relative;overflow:hidden;page-break-after:always;padding:96px 120px;background:var(--black);color:var(--white)}
+  .s.light{background:var(--paper);color:var(--ink)}
+  .kicker{font-size:16px;letter-spacing:.22em;font-weight:700;color:var(--gold);text-transform:uppercase}
+  h1{font-size:96px;line-height:1.02;letter-spacing:-.035em;font-weight:800}
+  h2{font-size:60px;line-height:1.08;letter-spacing:-.03em;font-weight:700;margin-top:18px;max-width:1400px}
+  h3{font-size:26px;letter-spacing:-.01em;font-weight:700}
+  p,li{font-size:22px;line-height:1.5}
+  .muted{color:var(--grey)}
+  .light .muted{color:var(--grey-2)}
+  .foot{position:absolute;left:120px;right:120px;bottom:48px;display:flex;justify-content:space-between;font-size:14px;letter-spacing:.14em;color:var(--grey);text-transform:uppercase}
+  .foot b{color:var(--gold);font-weight:700}
+  .cols{display:grid;gap:40px;margin-top:64px}
+  .c2{grid-template-columns:1fr 1fr}.c3{grid-template-columns:repeat(3,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
+  .card{border-top:2px solid var(--gold);padding-top:24px}
+  .card p{font-size:19px;margin-top:12px;color:#cfcfcf}
+  .light .card p{color:#3d3d3d}
+  .num{font-size:15px;font-weight:700;color:var(--gold);letter-spacing:.16em;margin-bottom:10px}
+  ul.list{list-style:none;margin-top:16px}
+  ul.list li{font-size:19px;padding:9px 0;border-bottom:1px solid var(--line);color:#d8d8d8}
+  .light ul.list li{border-color:var(--line-l);color:#2b2b2b}
+  .todo{display:inline-block;border:2px dashed var(--gold);color:var(--gold);background:rgba(233,184,36,.08);font-size:16px;font-weight:600;padding:8px 14px;border-radius:6px;line-height:1.4}
+  .light .todo{color:#8a6a00;background:#fbf3d6}
+  .todo::before{content:"LUIGGI · ";font-weight:800;letter-spacing:.08em}
+  .big-stat{font-size:72px;font-weight:800;letter-spacing:-.03em;color:var(--white)}
+  .img-ph{border:1.5px dashed #444;border-radius:10px;height:300px;display:flex;align-items:center;justify-content:center;color:#777;font-size:17px;text-align:center;padding:20px}
+  .shot{margin-top:40px;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+  .price{font-size:44px;font-weight:800;letter-spacing:-.02em;margin:14px 0 6px;color:var(--white)}
+  .tbl{width:100%;border-collapse:collapse;margin-top:48px}
+  .tbl th{font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);text-align:left;padding:0 0 14px;border-bottom:2px solid var(--gold)}
+  .tbl td{font-size:19px;padding:16px 24px 16px 0;border-bottom:1px solid var(--line);vertical-align:top;color:#d8d8d8}
+  .tbl td:first-child{font-weight:700;color:#fff;width:300px}
+</style>
+</head>
+<body>
+
+<!-- 01 PORTADA -->
+<section class="s">
+  <div class="kicker">Propuesta de aliado creativo · Octubre 2026</div>
+  <h1 style="margin-top:260px">Ingeniería<br>que se ve.</h1>
+  <p class="muted" style="font-size:28px;margin-top:36px;max-width:1000px">Web corporativa B2B, video corto para redes y producción audiovisual en campo para Movitécnica.</p>
+  <div class="foot"><span><b>MOZART</b> × MOVITÉCNICA</span><span>Documento confidencial</span></div>
+</section>
+
+<!-- 02 ENTENDIMIENTO -->
+<section class="s light">
+  <div class="kicker">01 · Lo que entendimos</div>
+  <h2>Movitécnica no vende equipos sueltos. Mantiene en movimiento operaciones que no pueden detenerse.</h2>
+  <div class="cols c4" style="margin-top:96px">
+    <div class="card"><div class="big-stat" style="color:var(--ink)">46</div><p>años en el mercado peruano.</p></div>
+    <div class="card"><div class="big-stat" style="color:var(--ink)">3</div><p>países: Perú, Chile y Colombia.</p></div>
+    <div class="card"><div class="big-stat" style="color:var(--ink)">~70%</div><p>de los ingresos proviene de minería, según declaraciones públicas de la empresa.</p></div>
+    <div class="card"><div class="big-stat" style="color:var(--ink)">5</div><p>líneas: fajas transportadoras, puentes grúa, polipastos, ascensores industriales y cables de acero.</p></div>
+  </div>
+  <p class="muted" style="margin-top:64px;max-width:1500px">A eso se suma un servicio posventa (mantenimiento, diagnóstico, overhaul e instalación de fajas) que es, en la práctica, la razón por la que un cliente minero vuelve a comprar.</p>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>02</span></div>
+</section>
+
+<!-- 03 RETO -->
+<section class="s">
+  <div class="kicker">02 · El reto de comunicación</div>
+  <h2>Quien compra un puente grúa no compra por impulso. Compra por confianza técnica.</h2>
+  <div class="cols c3">
+    <div class="card"><div class="num">QUIÉN DECIDE</div><h3>Operaciones y mantenimiento</h3><p>Necesita ver capacidad técnica, tiempos de respuesta y soporte en faena.</p></div>
+    <div class="card"><div class="num">QUIÉN COMPARA</div><h3>Compras y abastecimiento</h3><p>Necesita fichas técnicas, información clara por equipo y un canal de cotización directo.</p></div>
+    <div class="card"><div class="num">QUIÉN APRUEBA</div><h3>Seguridad y gerencia</h3><p>Necesita evidencia de cultura de seguridad, certificaciones y trayectoria.</p></div>
+  </div>
+  <p style="margin-top:72px;max-width:1500px;color:#cfcfcf">Nuestra tarea es que cada pieza, desde la web hasta un reel de 30 segundos, le dé a cada uno de ellos una razón concreta para pedir una cotización.</p>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>03</span></div>
+</section>
+
+<!-- 04 PROPUESTA -->
+<section class="s light">
+  <div class="kicker">03 · Nuestra propuesta</div>
+  <h2>Tres frentes conectados, una sola línea de marca.</h2>
+  <div class="cols c3" style="margin-top:96px">
+    <div class="card"><div class="num">FRENTE 01</div><h3>Web corporativa B2B</h3><p>Una web que funciona como herramienta comercial: catálogo por línea, ficha técnica y botón de cotizar en cada equipo, con versión para Perú, Chile y Colombia.</p></div>
+    <div class="card"><div class="num">FRENTE 02</div><h3>Video corto para redes</h3><p>Reels y piezas verticales con material real de faena para LinkedIn, Instagram y TikTok, con una cadencia mensual sostenida.</p></div>
+    <div class="card"><div class="num">FRENTE 03</div><h3>Audiovisual corporativo en campo</h3><p>Video institucional, casos de cliente y fotografía técnica grabados en operación, bajo el protocolo de seguridad de cada unidad.</p></div>
+  </div>
+  <p class="muted" style="margin-top:72px">Una sola jornada de rodaje en campo alimenta los tres frentes: imágenes para la web, cortes para redes y material para el video institucional.</p>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>04</span></div>
+</section>
+
+<!-- 05 QUIÉNES SOMOS -->
+<section class="s">
+  <div class="kicker">04 · Quiénes somos</div>
+  <h2>Mozart es una agencia creativa con oficio de red internacional y estructura ágil.</h2>
+  <div class="cols c3">
+    <div class="card"><div class="num">EXPERIENCIA</div><h3>Formación en redes globales</h3><p>Nuestro equipo viene de agencias como TBWA y Publicis.</p></div>
+    <div class="card"><div class="num">RECONOCIMIENTOS</div><h3>Cannes Lions y New York Festivals</h3><p>Trabajos del equipo reconocidos en festivales internacionales de creatividad.</p></div>
+    <div class="card"><div class="num">FORMA DE TRABAJO</div><h3>Equipo senior, trato directo</h3><p>Las personas que presentan esta propuesta son las que ejecutan el proyecto.</p></div>
+  </div>
+  <div style="margin-top:64px"><span class="todo">Confirmar el texto exacto de premios y agencias como figura en las Credenciales 2026 (qué premio, qué año, qué pieza).</span></div>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>05</span></div>
+</section>
+
+<!-- 06 CASOS -->
+<section class="s">
+  <div class="kicker">05 · Experiencia relevante</div>
+  <h2>Marcas técnicas y corporativas que confiaron en nosotros.</h2>
+  <div class="cols c2" style="margin-top:56px">
+    <div>
+      <div class="img-ph">Imagen del caso CLBS<br>(assets/ de la carpeta local)</div>
+      <h3 style="margin-top:24px">CLBS · Web corporativa y rebranding</h3>
+      <p class="muted" style="font-size:19px;margin-top:8px">Nueva identidad y web corporativa para una empresa de servicios B2B.</p>
+    </div>
+    <div>
+      <div class="img-ph">Imagen del caso Electrodata<br>(assets/ de la carpeta local)</div>
+      <h3 style="margin-top:24px">Electrodata · Rebranding</h3>
+      <p class="muted" style="font-size:19px;margin-top:8px">Identidad con un tono experto, profesional y cercano para una empresa de tecnología.</p>
+    </div>
+  </div>
+  <p style="margin-top:40px;font-size:19px;color:#cfcfcf">También hemos trabajado con <b style="color:#fff">BTG Pactual, SERRA y Lynch</b>.</p>
+  <div style="margin-top:20px"><span class="todo">Insertar imágenes de los casos y validar las descripciones de CLBS y Electrodata.</span></div>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>06</span></div>
+</section>
+
+<!-- 07 CONCEPTO -->
+<section class="s">
+  <div class="kicker">06 · Concepto</div>
+  <h1 style="margin-top:120px;font-size:120px">Ingeniería<br>que se ve.</h1>
+  <p style="margin-top:56px;max-width:1300px;font-size:28px;color:#cfcfcf">El trabajo de Movitécnica casi nunca se ve: ocurre en faena, de noche, en paradas de planta. Proponemos mostrarlo. Personas reales, procesos reales y el detalle técnico que demuestra por qué una operación minera confía en ellos.</p>
+  <div class="cols c3" style="margin-top:72px">
+    <div class="card"><h3>Mostrar el proceso</h3><p>Más que el equipo terminado, el cómo se instala y se mantiene.</p></div>
+    <div class="card"><h3>Hablar en datos</h3><p>Especificaciones claras y lenguaje técnico sin adornos.</p></div>
+    <div class="card"><h3>La seguridad como valor</h3><p>EPP, charlas y protocolos visibles en cada pieza.</p></div>
+  </div>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>07</span></div>
+</section>
+
+<!-- 08 WEB -->
+<section class="s light">
+  <div class="kicker">Frente 01 · Web corporativa B2B</div>
+  <h2>Una web que no solo informa: genera cotizaciones.</h2>
+  <div class="cols c2" style="margin-top:56px;gap:96px">
+    <div>
+      <h3>Arquitectura propuesta</h3>
+      <ul class="list">
+        <li><b>Equipos:</b> catálogo por línea con ficha técnica descargable.</li>
+        <li><b>Cotizar en cada equipo:</b> formulario corto que llega al área comercial correcta.</li>
+        <li><b>Selector PE · CL · CO:</b> contenido, contacto y oferta según el país.</li>
+        <li><b>Servicios posventa:</b> mantenimiento, diagnóstico, overhaul e instalación.</li>
+        <li><b>Industrias y casos:</b> minería, industria y proyectos con evidencia.</li>
+        <li><b>Nosotros:</b> trayectoria, certificaciones y seguridad.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Base técnica</h3>
+      <ul class="list">
+        <li>Diseño responsive, pensado también para revisar desde el celular en planta.</li>
+        <li>SEO técnico por línea de equipo y por país.</li>
+        <li>Administrador de contenidos para que el equipo actualice el catálogo.</li>
+        <li>Medición de cotizaciones por equipo y por país.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>08</span></div>
+</section>
+
+<!-- 09 MUESTRA HOME -->
+<section class="s">
+  <div class="kicker">Pieza de muestra · Home B2B</div>
+  <div class="shot" style="margin-top:28px;width:1360px;margin-left:auto;margin-right:auto"><img src="../entregables/muestra-home-movitecnica.png" style="width:100%;display:block"></div>
+  <p class="muted" style="font-size:17px;text-align:center;margin-top:24px">Botón Cotizar visible en cada equipo · selector de país en la barra superior · servicio posventa en primer nivel.</p>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>09</span></div>
+</section>
+
+<!-- 10 VIDEO REDES -->
+<section class="s">
+  <div class="kicker">Frente 02 · Video corto para redes</div>
+  <h2>Contenido que muestra a Movitécnica trabajando, no solo vendiendo.</h2>
+  <div class="cols c4">
+    <div class="card"><div class="num">PILAR 01</div><h3>En faena</h3><p>Instalaciones, mantenimientos y arranques de equipos.</p></div>
+    <div class="card"><div class="num">PILAR 02</div><h3>Explicado por un técnico</h3><p>Un especialista explica en 30 segundos cómo funciona un equipo o cómo evitar una falla.</p></div>
+    <div class="card"><div class="num">PILAR 03</div><h3>Seguridad</h3><p>Protocolos, EPP y buenas prácticas de izaje y transporte.</p></div>
+    <div class="card"><div class="num">PILAR 04</div><h3>Las personas</h3><p>El equipo humano detrás de 46 años de operación.</p></div>
+  </div>
+  <table class="tbl">
+    <tr><th>Formato</th><th>Uso</th><th>Canal principal</th></tr>
+    <tr><td>Reel 15–30 s</td><td>Alcance y recordación</td><td>LinkedIn, Instagram, TikTok</td></tr>
+    <tr><td>Carrusel técnico</td><td>Explicar un equipo o servicio</td><td>LinkedIn, Instagram</td></tr>
+    <tr><td>Clip con subtítulos</td><td>Testimonio o explicación técnica</td><td>LinkedIn</td></tr>
+  </table>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>10</span></div>
+</section>
+
+<!-- 11 STORYBOARD -->
+<section class="s" style="padding:0">
+  <img src="../entregables/muestra-storyboard-reel.png" style="width:1920px;height:1080px;display:block">
+</section>
+
+<!-- 12 AUDIOVISUAL -->
+<section class="s light">
+  <div class="kicker">Frente 03 · Audiovisual corporativo en campo</div>
+  <h2>Grabamos donde ocurre el trabajo, con el rigor que exige la faena.</h2>
+  <div class="cols c4" style="margin-top:80px">
+    <div class="card"><div class="num">01</div><h3>Video institucional</h3><p>Pieza de 2 a 3 minutos sobre trayectoria, capacidades y presencia regional.</p></div>
+    <div class="card"><div class="num">02</div><h3>Casos de cliente</h3><p>Proyectos contados con su contexto, su solución y su resultado, sujetos a la aprobación del cliente final.</p></div>
+    <div class="card"><div class="num">03</div><h3>Fotografía técnica</h3><p>Banco de imágenes de equipos, procesos y personas para la web y el material comercial.</p></div>
+    <div class="card"><div class="num">04</div><h3>Tomas aéreas</h3><p>Planos con dron de instalaciones y fajas, solo con los permisos de vuelo de la unidad.</p></div>
+  </div>
+  <p class="muted" style="margin-top:72px">Cada jornada en campo entrega, además, los cortes verticales para redes del Frente 02.</p>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>12</span></div>
+</section>
+
+<!-- 13 SEGURIDAD -->
+<section class="s">
+  <div class="kicker">Protocolo de seguridad en campo</div>
+  <h2>Nos adaptamos a los estándares de cada unidad minera.</h2>
+  <div class="cols c2" style="gap:96px;margin-top:56px">
+    <ul class="list">
+      <li><b>Antes:</b> inducción de la unidad y revisión del plan de rodaje con el supervisor de seguridad.</li>
+      <li><b>Personal:</b> equipo de rodaje con SCTR vigente y exámenes médicos según lo requiera la unidad.</li>
+      <li><b>EPP:</b> completo y según la matriz de la unidad (casco, lentes, chaleco, botas y protección auditiva).</li>
+      <li><b>Dron:</b> operado por piloto acreditado, con plan de vuelo aprobado por la unidad.</li>
+      <li><b>Durante:</b> sin interferir con la operación; acompañamiento permanente de personal de Movitécnica.</li>
+      <li><b>Después:</b> revisión del material por Movitécnica y el cliente final antes de publicar.</li>
+    </ul>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <span class="todo">Confirmar que todo el equipo de rodaje tiene SCTR vigente (salud y pensión) y adjuntar constancias.</span>
+      <span class="todo">Confirmar piloto de dron acreditado (licencia o registro vigente y seguro del equipo) o retirar las tomas aéreas.</span>
+      <span class="todo">Confirmar si el equipo cuenta con exámenes médicos ocupacionales o si se gestionan por proyecto.</span>
+    </div>
+  </div>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>13</span></div>
+</section>
+
+<!-- 14 METODOLOGÍA -->
+<section class="s light">
+  <div class="kicker">Cómo trabajamos</div>
+  <h2>Un proceso claro, con un responsable por frente.</h2>
+  <div class="cols c4" style="margin-top:96px">
+    <div class="card"><div class="num">FASE 01</div><h3>Inmersión</h3><p>Reunión de arranque, revisión de marca, catálogo y prioridades comerciales por país.</p></div>
+    <div class="card"><div class="num">FASE 02</div><h3>Estrategia y diseño</h3><p>Arquitectura web, línea visual y plan de contenidos. Aprobación por etapas.</p></div>
+    <div class="card"><div class="num">FASE 03</div><h3>Producción</h3><p>Desarrollo web y jornadas de rodaje coordinadas con las unidades.</p></div>
+    <div class="card"><div class="num">FASE 04</div><h3>Lanzamiento y mejora</h3><p>Publicación, medición de cotizaciones y ajustes mensuales.</p></div>
+  </div>
+  <div style="margin-top:72px"><span class="todo">Definir plazos por fase (en semanas) según la capacidad del equipo.</span></div>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>14</span></div>
+</section>
+
+<!-- 15 INVERSIÓN -->
+<section class="s">
+  <div class="kicker">Inversión</div>
+  <h2>Paquetes por frente, contratables por separado o en conjunto.</h2>
+  <div class="cols c3" style="margin-top:56px">
+    <div class="card"><div class="num">FRENTE 01 · PROYECTO</div><h3>Web corporativa B2B</h3><div class="price">S/ ——</div>
+      <ul class="list"><li>Arquitectura y diseño UX/UI</li><li>Catálogo con botón Cotizar por equipo</li><li>Versiones PE · CL · CO</li><li>Administrador de contenidos y SEO técnico</li></ul></div>
+    <div class="card"><div class="num">FRENTE 02 · MENSUAL</div><h3>Video corto para redes</h3><div class="price">S/ —— /mes</div>
+      <ul class="list"><li>Plan de contenidos mensual</li><li>Reels verticales con subtítulos</li><li>Carruseles técnicos</li><li>Reporte mensual de resultados</li></ul></div>
+    <div class="card"><div class="num">FRENTE 03 · POR JORNADA</div><h3>Audiovisual en campo</h3><div class="price">S/ —— /jornada</div>
+      <ul class="list"><li>Equipo de rodaje con protocolo de seguridad</li><li>Fotografía técnica</li><li>Cortes verticales para redes</li><li>Dron opcional (con piloto acreditado)</li></ul></div>
+  </div>
+  <div style="margin-top:36px;display:flex;gap:16px;flex-wrap:wrap">
+    <span class="todo">Colocar montos según el borrador de precios del BRIEF y la cantidad de piezas por mes.</span>
+    <span class="todo">Definir moneda, IGV, viáticos a faena y descuento por paquete integral.</span>
+  </div>
+  <div class="foot"><span>Mozart × Movitécnica</span><span>15</span></div>
+</section>
+
+<!-- 16 CIERRE -->
+<section class="s">
+  <div class="kicker">Próximos pasos</div>
+  <h1 style="margin-top:120px">Conversemos.</h1>
+  <div class="cols c3" style="margin-top:96px">
+    <div class="card"><div class="num">01</div><h3>Reunión de 30 minutos</h3><p>Para conocer prioridades y alcance por país.</p></div>
+    <div class="card"><div class="num">02</div><h3>Propuesta ajustada</h3><p>Alcance y montos finales según lo conversado.</p></div>
+    <div class="card"><div class="num">03</div><h3>Arranque</h3><p>Inmersión y plan de la primera jornada en campo.</p></div>
+  </div>
+  <div style="margin-top:72px"><span class="todo">Agregar nombre, cargo, correo, teléfono y web de contacto de Mozart.</span></div>
+  <div class="foot"><span><b>MOZART</b></span><span>Gracias</span></div>
+</section>
+
+</body>
+</html>
